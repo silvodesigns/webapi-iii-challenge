@@ -23,7 +23,7 @@ router.post('/:id/posts', (req, res) => {
         user_id: id
     }
     
-    console.log(newPost, "post");
+    console.log(newPost, "post")
 
     users.insert(newPost)
     .then(post => {
