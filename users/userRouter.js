@@ -97,7 +97,7 @@ function validatePost(req, res, next) {
     if(!post.text){
         return res.status(400).json({message: "Missing required text field"})
     } else {
-        next()
+        next();
     }
 
 };
